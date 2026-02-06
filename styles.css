@@ -1064,6 +1064,65 @@ img {
     color: rgba(44, 19, 97, 0.7);
 }
 
+.nitya-actions {
+    background: #fff9f4;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.quick-copy h2 {
+    font-family: var(--font-nitya-serif);
+    color: #3b170b;
+    margin-bottom: 16px;
+}
+
+.quick-copy p {
+    color: rgba(43, 15, 15, 0.75);
+}
+
+.quick-card {
+    background: #fff;
+    border-radius: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.quick-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.quick-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background: rgba(230, 81, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.quick-row h3 {
+    font-family: var(--font-nitya-serif);
+    margin-bottom: 6px;
+}
+
+.quick-row p {
+    color: rgba(43, 15, 15, 0.7);
+    margin: 0;
+}
+
 .nitya-offline {
     background: #260b0b;
     color: #ffe7d6;
