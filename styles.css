@@ -963,6 +963,136 @@ img {
     gap: 24px;
 }
 
+/* ==========================================
+   App Landing Pages
+   ========================================== */
+.app-hero {
+    min-height: auto;
+    padding: 160px 24px 80px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.breadcrumbs a {
+    color: var(--primary-light);
+}
+
+.app-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.app-meta span {
+    padding: 8px 14px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    background: rgba(124, 92, 191, 0.1);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.app-section {
+    padding: 80px 0;
+}
+
+.app-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.app-info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 32px;
+}
+
+.app-info-card h2 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.app-info-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.feature-card {
+    background: rgba(124, 92, 191, 0.15);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.download-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 32px;
+    position: sticky;
+    top: 120px;
+}
+
+.download-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.app-screens {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.app-screens .phone-frame {
+    width: 160px;
+    height: 320px;
+}
+
+.mantra-list {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.mantra-list li {
+    margin-bottom: 8px;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
