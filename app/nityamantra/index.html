@@ -8,7 +8,7 @@
     <link rel="icon" type="image/jpeg" href="../../Logo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
@@ -34,85 +34,168 @@
         </div>
     </nav>
 
-    <header class="hero app-hero" id="top">
-        <div class="hero-content" style="max-width: 800px; text-align: left;">
-            <div class="breadcrumbs">
-                <a href="../../index.html#apps">Apps</a>
-                <span>/</span>
-                <span>Nitya Mantra</span>
+    <main class="nitya-page">
+        <header class="nitya-hero" id="top">
+            <div class="nitya-hero__pattern" aria-hidden="true">
+                <span class="petal petal-1"></span>
+                <span class="petal petal-2"></span>
+                <span class="petal petal-3"></span>
             </div>
-            <div class="hero-badge">Meditation & Mindfulness</div>
-            <h1>Nitya Mantra</h1>
-            <p class="hero-subtitle">Daily mantra companion that helps you build a calming ritual with guided audio, curated collections, and streak tracking.</p>
-            <div class="app-meta">
-                <span>Android</span>
-                <span>Coming soon</span>
-                <span>No sign-in required</span>
-            </div>
-        </div>
-    </header>
-
-    <section class="app-section">
-        <div class="container app-layout">
-            <article class="app-info-card">
-                <h2>Experience purposeful chanting</h2>
-                <p>Nitya Mantra delivers a focused space for daily meditation. Choose from uplifting Sanskrit mantras, calming affirmations, or custom tracks you curate yourself. Everything works offline so you can center yourself anywhere.</p>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>Curated Library</h3>
-                        <p>Handpicked mantras grouped by mood, intention, and tradition.</p>
+            <div class="container nitya-hero__grid">
+                <div class="nitya-hero__text">
+                    <div class="nitya-hero__logo" aria-hidden="true">
+                        <img src="lotus-icon.svg" alt="Nitya Mantra lotus icon">
                     </div>
-                    <div class="feature-card">
-                        <h3>Guided Audio</h3>
-                        <p>High-quality recordings with loop controls and bell intervals.</p>
+                    <p class="nitya-hero__eyebrow">Nitya Mantra</p>
+                    <h1>Daily Om focus. One card at a time.</h1>
+                    <p class="hero-subtitle">Every dawn, Nitya Mantra brings a fresh deity card with one Om mantra and a gentle reflection. Set your reminder once, stay offline, and still practice in English or your mother tongue—no logins, no playlists.</p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-lotus" href="https://play.google.com/store/apps/details?id=com.ets.nityamantra" target="_blank" rel="noopener">Download on Google Play</a>
                     </div>
-                    <div class="feature-card">
-                        <h3>Personal Routine</h3>
-                        <p>Schedule reminders, track streaks, and log reflections in one place.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Offline Friendly</h3>
-                        <p>All downloads stay on your device—no accounts, no data sharing.</p>
-                    </div>
+                    <ul class="hero-highlights">
+                        <li>Multi-language Om + Vedic chants</li>
+                        <li>Personal routines & sunrise reminders</li>
+                        <li>Offline mantra packs, no accounts</li>
+                    </ul>
                 </div>
-            </article>
-
-            <aside class="download-card">
-                <h3>Launch Timeline</h3>
-                <p>Currently in active development. Join the early list to be notified the moment it hits Google Play.</p>
-                <a href="mailto:szarathk@gmail.com?subject=Notify%20me%20about%20Nitya%20Mantra" class="btn btn-primary btn-full">Get Launch Updates</a>
-                <div class="app-screens">
-                    <div class="phone-frame">
-                        <div class="phone-screen todo-screen">
-                            <div class="preview-content">
-                                <div class="preview-task">Morning Chant</div>
-                                <div class="preview-task">Shanti Loop</div>
-                                <div class="preview-task">Custom Intention</div>
+                <div class="nitya-hero__visual" aria-hidden="true">
+                    <div class="app-shell">
+                        <div class="app-header">
+                            <span class="app-title">Nitya Mantra</span>
+                            <span class="refresh-icon">↻</span>
+                        </div>
+                        <div class="mantra-card">
+                            <div class="avatar">K</div>
+                            <p class="mantra-hint">Krishna · Divine Enchanter</p>
+                            <h3>Om Kleem Krishnaya Namaha</h3>
+                            <p class="mantra-meaning">“Love is the essence of all creation.”</p>
+                            <div class="tag-row">
+                                <span>#love</span>
+                                <span>#joy</span>
+                                <span>#dharma</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="phone-frame">
-                        <div class="phone-screen game-screen">
-                            <div class="player-dot"></div>
+                        <div class="reminder-banner">
+                            <div>
+                                <p>Mantra Reminder</p>
+                                <small>Never miss your daily mantra.</small>
+                            </div>
+                            <span class="cta-pill">Set Daily Reminder</span>
                         </div>
                     </div>
                 </div>
-            </aside>
-        </div>
-    </section>
+            </div>
+        </header>
 
-    <section class="app-section" style="background: var(--bg-darker);">
-        <div class="container app-info-card">
-            <h2>Planned mantra packs</h2>
-            <p>We are recording locally inspired chants and international favorites. Current roadmap:</p>
-            <ul class="mantra-list">
-                <li>Gayatri, Maha Mrityunjaya, and Shanti mantras with transliteration.</li>
-                <li>Daily affirmation loops for focus, gratitude, and resilience.</li>
-                <li>Custom playlist builder for personal recordings.</li>
-                <li>Ambient pads and binaural drones for immersive sessions.</li>
-            </ul>
-        </div>
-    </section>
+        <section class="nitya-section nitya-pillars" id="features">
+            <div class="container">
+                <div class="nitya-section-heading">
+                    <p class="section-badge">Why devotees install it</p>
+                    <h2>Simple, truthful pillars</h2>
+                    <p>Everything in the app is already working in builds today—no imaginary features.</p>
+                </div>
+                <div class="pillar-grid">
+                    <article class="pillar-card">
+                        <span class="pillar-icon">🌐</span>
+                        <h3>Multi-language chants</h3>
+                        <p>Choose Om recitations in English, Hindi, Tamil, Telugu, Kannada, Malayalam, Bengali, Marathi, Gujarati, Punjabi, Odia, and Sanskrit.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <span class="pillar-icon">⏰</span>
+                        <h3>Personal routines</h3>
+                        <p>Set sunrise or custom reminders in a single tap. A devotional push notification mirrors the card you see in-app.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <span class="pillar-icon">📦</span>
+                        <h3>Offline mantra packs</h3>
+                        <p>Download Om collections locally so that every chant, story, and reminder works without an account or data connection.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="nitya-section nitya-screens">
+            <div class="container">
+                <div class="screen-grid">
+                    <article class="screen-card language-card">
+                        <header>
+                            <p>Select Language</p>
+                            <span class="language-count">12</span>
+                        </header>
+                        <ul>
+                            <li><strong>English</strong> (English)</li>
+                            <li>हिन्दी (Hindi)</li>
+                            <li>தமிழ் (Tamil)</li>
+                            <li>తెలుగు (Telugu)</li>
+                            <li>ಕನ್ನಡ (Kannada)</li>
+                            <li>മലയാളം (Malayalam)</li>
+                            <li>বাংলা (Bengali)</li>
+                            <li>मराठी (Marathi)</li>
+                            <li>ગુજરાતી (Gujarati)</li>
+                            <li>ਪੰਜਾਬੀ (Punjabi)</li>
+                            <li>ଓଡ଼ିଆ (Odia)</li>
+                            <li>संस्कृतम् (Sanskrit)</li>
+                        </ul>
+                    </article>
+                    <article class="screen-card reminder-card">
+                        <p class="section-badge">Routine in action</p>
+                        <h3>Set the bell for dawn</h3>
+                        <p>Reminder picker uses the same saffron dial you see every day. Once confirmed, Android notifications carry the mantra verse and deity focus.</p>
+                        <div class="time-picker">
+                            <div class="time-value">
+                                <span>05</span>
+                                <span>30</span>
+                                <small>AM</small>
+                            </div>
+                            <div class="time-wheel">
+                                <span>4</span>
+                                <span>5</span>
+                                <span class="active">6</span>
+                            </div>
+                        </div>
+                        <div class="notification-preview">
+                            <p>Krishna — Divine Enchanter</p>
+                            <small>“Om Kleem Krishnaya Namaha” now available · Vasant Panchami</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="nitya-section nitya-offline">
+            <div class="container offline-grid">
+                <div>
+                    <p class="section-badge">Privacy-first</p>
+                    <h2>No accounts. No data sharing.</h2>
+                    <p>Nitya Mantra stores reminders and preferences on-device. Whether you have signal or not, the Om deck continues rotating through deities, languages, and festival spotlights every morning.</p>
+                </div>
+                <div class="offline-card">
+                    <p>What rotates daily</p>
+                    <ul>
+                        <li>Deity focus (Krishna, Shiva, Devi, and more)</li>
+                        <li>Matching mantra meaning + intention tags</li>
+                        <li>Your reminder state and offline audio cache</li>
+                    </ul>
+                    <span class="offline-tag">Works offline</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="nitya-section nitya-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <div>
+                        <p class="cta-eyebrow">From ETS</p>
+                        <h3>Ready when you are</h3>
+                        <p>Tap to download or send us a note for early feedback builds.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a class="btn btn-lotus" href="https://play.google.com/store/apps/details?id=com.ets.nityamantra" target="_blank" rel="noopener">Download on Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
