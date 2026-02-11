@@ -612,6 +612,174 @@ img {
     50% { transform: scale(1.2); opacity: 1; }
 }
 
+.nitya-app .app-mockup {
+    background: linear-gradient(135deg, rgba(255, 190, 150, 0.2), rgba(233, 30, 99, 0.08));
+}
+
+.nitya-icon {
+    background: linear-gradient(135deg, var(--nitya-gold), var(--nitya-rose-mid));
+    color: #2b0f0f;
+    font-family: var(--font-nitya-serif);
+}
+
+.nitya-screen {
+    background: linear-gradient(180deg, #2b0f0f 0%, #592020 45%, #8f1f1f 100%);
+    padding: 24px 20px;
+    color: #fff4ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-nitya-sans);
+}
+
+.nitya-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.nitya-card-eyebrow {
+    font-weight: 600;
+    letter-spacing: 0.35em;
+}
+
+.nitya-mantra-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 18px;
+    border-radius: 18px;
+    margin-top: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.nitya-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.9), rgba(233, 30, 99, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.nitya-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.nitya-mantra-hint {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 6px;
+}
+
+.nitya-mantra-card h4 {
+    font-family: var(--font-nitya-serif);
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.nitya-mantra-meaning {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 12px;
+}
+
+.nitya-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nitya-tags span {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.nitya-reminder {
+    margin-top: 24px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.nitya-reminder p {
+    font-weight: 600;
+}
+
+.nitya-reminder small {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nitya-pill {
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--nitya-gold), var(--nitya-rose-mid));
+    color: #2b0f0f;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.nitya-info-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    color: var(--nitya-rose-light);
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.nitya-description {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nitya-icon {
+    position: relative;
+    background: linear-gradient(145deg, #ffd152, #ff5f8f);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: 0 18px 35px rgba(255, 95, 143, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nitya-icon::before {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border-radius: 14px;
+    background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.45), transparent 55%), radial-gradient(circle, #ff823f, #ff3b6f 65%);
+    opacity: 0.9;
+}
+
+.nitya-icon img {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
 .app-info {
     padding: 32px;
 }
