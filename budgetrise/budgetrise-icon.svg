@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="108" height="108" fill="none"/>
+  <!-- Orbit ring -->
+  <path fill="#2F3F79" fill-rule="evenodd" d="M54 18c-19.882 0-36 16.118-36 36s16.118 36 36 36 36-16.118 36-36S73.882 18 54 18zm0 8c15.464 0 28 12.536 28 28s-12.536 28-28 28-28-12.536-28-28 12.536-28 28-28z" clip-rule="evenodd"/>
+  <!-- Orbit accent -->
+  <path fill="#90E0C5" d="M26 49c2.9-13.4 14.8-23 28-23 11.1 0 21.1 6.2 26.1 15.4l6.5-3.8C80.2 24.4 68 17 54 17 35.9 17 20.4 29.6 16.9 47.1L26 49z"/>
+  <!-- Growth bars -->
+  <path fill="#6EE7B7" d="M30 80h12V56H30z"/>
+  <path fill="#34D399" d="M48 80h12V48H48z"/>
+  <path fill="#10B981" d="M66 80h12V40H66z"/>
+  <!-- Bar highlight -->
+  <path fill="#FFFFFF" fill-opacity="0.2" d="M30 80h4V56h-4zM48 80h4V48h-4zM66 80h4V40h-4z"/>
+  <!-- Base shadow -->
+  <path fill="#091024" d="M26 82h56c0 4.418-12.536 8-28 8s-28-3.582-28-8z"/>
+</svg>

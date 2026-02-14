@@ -33,6 +33,12 @@
     --nitya-saffron: #E65100;
     --nitya-deep: #2B0F0F;
     --nitya-gradient: radial-gradient(circle at top, #f99bb9 0%, rgba(236, 64, 122, 0.4) 30%, rgba(230, 81, 0, 0.2) 70%), linear-gradient(135deg, rgba(233, 30, 99, 0.95), rgba(236, 64, 122, 0.85));
+    --budgetrise-teal: #2DE5C0;
+    --budgetrise-cyan: #3DBDFF;
+    --budgetrise-indigo: #081c2c;
+    --budgetrise-navy: #0a2639;
+    --budgetrise-glow: rgba(61, 189, 255, 0.35);
+    --budgetrise-gradient: radial-gradient(circle at 25% 20%, rgba(61, 189, 255, 0.4), transparent 45%), radial-gradient(circle at 80% 0%, rgba(45, 229, 192, 0.35), transparent 55%), linear-gradient(135deg, #031424, #06263d 55%, #08314f);
 }
 
 *, *::before, *::after {
@@ -780,6 +786,83 @@ img {
     display: block;
 }
 
+.budgetrise-app .app-mockup {
+    background: linear-gradient(135deg, rgba(74, 185, 255, 0.25), rgba(60, 255, 170, 0.1));
+}
+
+.budgetrise-screen {
+    background: linear-gradient(180deg, #071824 0%, #0c2435 60%, #11384e 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #d5f6ff;
+}
+
+.budgetrise-header {
+    display: flex;
+    gap: 8px;
+}
+
+.budgetrise-pill {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.budgetrise-chart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    align-items: end;
+    height: 120px;
+}
+
+.budgetrise-chart .bar {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #47e5ff, #3dd598);
+    box-shadow: 0 8px 18px rgba(71, 229, 255, 0.3);
+}
+
+.budgetrise-chart .bar-1 { height: 35%; }
+.budgetrise-chart .bar-2 { height: 65%; }
+.budgetrise-chart .bar-3 { height: 90%; }
+.budgetrise-chart .bar-4 { height: 50%; }
+
+.budgetrise-summary {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 14px 16px;
+}
+
+.budgetrise-summary .summary-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(213, 246, 255, 0.75);
+}
+
+.budgetrise-summary .summary-amount {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #69ffe1;
+}
+
+.budgetrise-icon {
+    background: linear-gradient(135deg, #3dd598, #47e5ff);
+    color: #02131f;
+    font-weight: 700;
+}
+
+.budgetrise-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .app-info {
     padding: 32px;
 }
@@ -1380,6 +1463,366 @@ img {
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+    }
+}
+
+/* ==========================================
+   BudgetRise Landing
+   ========================================== */
+.budgetrise-page {
+    background: var(--budgetrise-gradient);
+    min-height: 100vh;
+    color: #e2f7ff;
+    font-family: var(--font-sans);
+}
+
+.budgetrise-hero {
+    position: relative;
+    padding: 140px 0 80px;
+    overflow: hidden;
+}
+
+.budgetrise-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(61, 189, 255, 0.25), transparent 55%);
+    pointer-events: none;
+}
+
+.budgetrise-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.budgetrise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 60px;
+    align-items: center;
+}
+
+.budgetrise-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(61, 189, 255, 0.4);
+    background: rgba(61, 189, 255, 0.08);
+    color: var(--budgetrise-cyan);
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.budgetrise-hero__text h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.budgetrise-hero__text p {
+    color: rgba(226, 247, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.budgetrise-hero__buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-budgetrise {
+    background: linear-gradient(120deg, var(--budgetrise-cyan), var(--budgetrise-teal));
+    color: var(--budgetrise-indigo);
+    box-shadow: 0 10px 30px var(--budgetrise-glow);
+}
+
+.btn-budgetrise:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(61, 189, 255, 0.45);
+}
+
+.btn-outline-budgetrise {
+    border-color: rgba(226, 247, 255, 0.3);
+    color: #e2f7ff;
+}
+
+.btn-outline-budgetrise:hover {
+    background: rgba(226, 247, 255, 0.08);
+    border-color: rgba(226, 247, 255, 0.6);
+}
+
+.budgetrise-hero__metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-top: 36px;
+}
+
+.budgetrise-metric {
+    background: rgba(6, 38, 61, 0.6);
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid rgba(61, 189, 255, 0.15);
+}
+
+.budgetrise-metric strong {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--budgetrise-teal);
+}
+
+.budgetrise-metric span {
+    color: rgba(226, 247, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.budgetrise-hero__visual {
+    display: flex;
+    justify-content: center;
+}
+
+.budgetrise-shell {
+    width: 340px;
+    border-radius: 40px;
+    padding: 28px;
+    background: rgba(1, 8, 16, 0.8);
+    border: 1px solid rgba(61, 189, 255, 0.2);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.45);
+}
+
+.budgetrise-shell header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(226, 247, 255, 0.8);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.budgetrise-balance {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--budgetrise-teal);
+    margin: 12px 0 4px;
+}
+
+.budgetrise-shell small {
+    color: rgba(226, 247, 255, 0.6);
+}
+
+.budgetrise-hero-list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.budgetrise-hero-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(226, 247, 255, 0.08);
+    padding-bottom: 8px;
+}
+
+.budgetrise-section {
+    padding: 100px 0;
+}
+
+.budgetrise-section .section-header p {
+    color: rgba(226, 247, 255, 0.75);
+}
+
+.budgetrise-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.budgetrise-card {
+    background: rgba(5, 24, 37, 0.85);
+    border: 1px solid rgba(61, 189, 255, 0.12);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.budgetrise-card h3 {
+    color: #f5fffa;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.budgetrise-card p {
+    color: rgba(226, 247, 255, 0.75);
+}
+
+.budgetrise-card ul {
+    margin-top: 16px;
+    padding-left: 18px;
+    color: rgba(226, 247, 255, 0.75);
+    line-height: 1.7;
+}
+
+.budgetrise-glow-box {
+    background: rgba(7, 24, 36, 0.9);
+    border-radius: 28px;
+    padding: 40px;
+    border: 1px solid rgba(45, 229, 192, 0.25);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.45);
+}
+
+.budgetrise-glow-box h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.budgetrise-glow-box p {
+    color: rgba(226, 247, 255, 0.75);
+}
+
+.budgetrise-cta {
+    text-align: center;
+    padding: 80px 0 120px;
+}
+
+.budgetrise-cta h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 12px;
+}
+
+.budgetrise-cta p {
+    color: rgba(226, 247, 255, 0.7);
+    margin-bottom: 24px;
+}
+
+.budgetrise-cta .btn {
+    min-width: 220px;
+}
+
+/* ==========================================
+   BudgetRise Delete Data Page
+   ========================================== */
+.budgetrise-delete {
+    min-height: 100vh;
+    background: radial-gradient(circle at 0% 0%, rgba(61, 189, 255, 0.15), transparent 50%), #050f18;
+    color: #e4f7ff;
+    padding: 140px 0 100px;
+}
+
+.delete-card {
+    background: rgba(4, 20, 32, 0.85);
+    border-radius: 32px;
+    border: 1px solid rgba(61, 189, 255, 0.12);
+    padding: 40px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.delete-card h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 16px;
+}
+
+.delete-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.delete-meta span {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(61, 189, 255, 0.3);
+    color: rgba(226, 247, 255, 0.8);
+    font-size: 0.85rem;
+}
+
+.delete-section {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(61, 189, 255, 0.12);
+}
+
+.delete-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.delete-section p,
+.delete-section li {
+    color: rgba(226, 247, 255, 0.78);
+    line-height: 1.7;
+}
+
+.delete-section ol,
+.delete-section ul {
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+.delete-section ol li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.response-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(6, 30, 46, 0.8);
+    border: 1px solid rgba(61, 189, 255, 0.2);
+}
+
+.delete-form {
+    margin-top: 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.delete-form input,
+.delete-form textarea {
+    background: rgba(5, 20, 32, 0.85);
+    border: 1px solid rgba(61, 189, 255, 0.2);
+    border-radius: 12px;
+    padding: 14px;
+    color: #e4f7ff;
+}
+
+.delete-form button {
+    justify-content: center;
+}
+
+.retention-note {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: rgba(226, 247, 255, 0.65);
+}
+
+@media (max-width: 768px) {
+    .budgetrise-grid {
+        gap: 32px;
+    }
+
+    .budgetrise-shell {
+        width: 100%;
+    }
+
+    .budgetrise-section {
+        padding: 60px 0;
+    }
+
+    .delete-card {
+        padding: 28px;
     }
 }
 

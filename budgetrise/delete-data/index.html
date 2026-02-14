@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete BudgetRise Data | Evolved Tech Stack</title>
+    <meta name="description" content="How to delete your BudgetRise data, including on-device records and Google Drive backups. Contact support@evolvedtechstack.com for manual confirmations.">
+    <link rel="icon" type="image/png" href="../../Clean_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html#home" class="nav-logo">
+                <img src="../../Clean_icon.png" alt="Evolved Tech Stack Logo">
+                <span>Evolved Tech Stack</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#apps" class="nav-link">Our Apps</a></li>
+                <li><a href="../../index.html#services" class="nav-link">Services</a></li>
+                <li><a href="../../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../../privacy.html" class="nav-link">Privacy</a></li>
+                <li><a href="../../index.html#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="budgetrise-delete">
+        <div class="container">
+            <article class="delete-card">
+                <p class="budgetrise-hero__badge" style="margin-bottom:16px;">BudgetRise by Evolved Tech Stack</p>
+                <h1>Delete your BudgetRise data</h1>
+                <div class="delete-meta">
+                    <span>Version: Android</span>
+                    <span>Support: support@evolvedtechstack.com</span>
+                    <span>Response time: ≤ 30 days</span>
+                </div>
+                <p>BudgetRise stores finance data locally on your Android device and, if you opt in, inside your Google Drive account. Follow the steps below to erase information immediately. If you need confirmation, use the secure request form and our team will respond within 30 days.</p>
+
+                <section class="delete-section" id="on-device">
+                    <h2>Step 1 · Remove data from your device</h2>
+                    <ol>
+                        <li>Open <strong>BudgetRise</strong> on your Android phone or tablet.</li>
+                        <li>Go to <strong>Settings → Security</strong>.</li>
+                        <li>Tap <strong>Erase All Data</strong> and confirm the prompt.</li>
+                    </ol>
+                    <p>This wipes the local SQLite database, encrypted SharedPreferences, caches, receipts, reminders, and notification schedules instantly. The app restarts in a clean state as if it were freshly installed.</p>
+                </section>
+
+                <section class="delete-section" id="drive">
+                    <h2>Step 2 · Delete Google Drive backups (optional)</h2>
+                    <ol>
+                        <li>Visit <a href="https://drive.google.com" target="_blank" rel="noopener">drive.google.com</a> and sign in with the same Google account you use for BudgetRise backups.</li>
+                        <li>Select the gear icon → <strong>Settings</strong> → <strong>Manage Apps</strong>.</li>
+                        <li>Scroll to <strong>BudgetRise</strong>, click the options menu, and choose <strong>Delete hidden app data</strong>.</li>
+                    </ol>
+                    <p>Drive deletes the encrypted backup immediately. Because the file lives under your Google account, only you can perform this step. BudgetRise does not keep a server-side copy.</p>
+                </section>
+
+                <section class="delete-section" id="data-scope">
+                    <h2>What gets erased?</h2>
+                    <ul>
+                        <li>Expenses, categories, budgets, and envelope balances.</li>
+                        <li>Receipt image URIs, PDFs, and attachment metadata.</li>
+                        <li>Reminders, recurring schedules, notifications, and preferences.</li>
+                        <li>Local security settings (PIN / biometric toggles).</li>
+                    </ul>
+                    <p>BudgetRise does <strong>not</strong> collect analytics, advertising identifiers, crash logs, or behavioral tracking data. Once you complete the steps above, nothing remains on-device or in Drive.</p>
+                </section>
+
+                <section class="delete-section" id="retention">
+                    <h2>Retention exceptions</h2>
+                    <p>We may retain legally required artifacts such as purchase receipts or transactional emails for accounting and compliance purposes. These records stay in secure archival storage and are not linked to your app data.</p>
+                </section>
+
+                <section class="delete-section" id="contact">
+                    <h2>Request manual confirmation</h2>
+                    <p>If you would like written confirmation that your deletion request has been fulfilled, submit the form below or email <a href="mailto:support@evolvedtechstack.com">support@evolvedtechstack.com</a>. We respond within 30 days.</p>
+                    <form class="delete-form" action="https://formspree.io/f/support@evolvedtechstack.com" method="POST">
+                        <input type="text" name="name" placeholder="Full name" required>
+                        <input type="email" name="email" placeholder="Email used in your request" required>
+                        <textarea name="details" rows="4" placeholder="Tell us which device and Google account to reference." required></textarea>
+                        <button type="submit" class="btn btn-budgetrise">Send confirmation request</button>
+                    </form>
+                    <div class="response-box">
+                        <strong>Timeline:</strong> We acknowledge every verified request within 7 days and deliver final confirmation within 30 days.
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../../Clean_icon.png" alt="Evolved Tech Stack">
+                    <span>Evolved Tech Stack</span>
+                </div>
+                <p class="footer-tagline">When you need to evolve.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/szarath-kumar" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com/szarath" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="../../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Evolved Tech Stack. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
