@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo | Task Management & Habit Tracker by Evolved Tech Stack</title>
+    <meta name="description" content="ToDo by Evolved Tech Stack — a powerful task management app with habit tracking, streak monitoring, focus timer, and smart notifications. Stay organized and build lasting habits.">
+    <link rel="icon" type="image/png" href="../../Clean_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html#home" class="nav-logo">
+                <img src="../../Clean_icon.png" alt="Evolved Tech Stack Logo">
+                <span>Evolved Tech Stack</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#apps" class="nav-link">Our Apps</a></li>
+                <li><a href="../../index.html#services" class="nav-link">Services</a></li>
+                <li><a href="../../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../../privacy.html" class="nav-link">Privacy</a></li>
+                <li><a href="../../index.html#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="todo-page">
+        <header class="todo-hero" id="top">
+            <div class="todo-hero__glow" aria-hidden="true"></div>
+            <div class="container todo-hero__grid">
+                <div class="todo-hero__text">
+                    <span class="todo-hero__badge">ToDo · by Evolved Tech Stack</span>
+                    <h1>Tasks, habits, and focus — all in one place.</h1>
+                    <p class="hero-subtitle">ToDo helps you organise daily tasks, build lasting habits with streak tracking, and stay locked in with a built-in focus timer. Smart notifications keep you on track without the noise.</p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-todo" href="https://play.google.com/store/apps/details?id=com.ets.todo" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                            Download on Google Play
+                        </a>
+                    </div>
+                    <div class="todo-hero__metrics">
+                        <div class="todo-metric">
+                            <strong>Offline</strong>
+                            <span>Works without internet</span>
+                        </div>
+                        <div class="todo-metric">
+                            <strong>Free</strong>
+                            <span>No subscriptions required</span>
+                        </div>
+                        <div class="todo-metric">
+                            <strong>Private</strong>
+                            <span>No accounts, no tracking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="todo-hero__visual" aria-hidden="true">
+                    <div class="todo-shell">
+                        <header>
+                            <span>ToDo</span>
+                            <span>Today</span>
+                        </header>
+                        <div class="todo-shell__tasks">
+                            <div class="todo-shell__task done">
+                                <span class="todo-shell__check checked">&#10003;</span>
+                                <div>
+                                    <p>Morning routine</p>
+                                    <small>06:30 AM · Habit</small>
+                                </div>
+                                <span class="todo-shell__streak">7-day streak</span>
+                            </div>
+                            <div class="todo-shell__task done">
+                                <span class="todo-shell__check checked">&#10003;</span>
+                                <div>
+                                    <p>Review pull requests</p>
+                                    <small>09:00 AM · Work</small>
+                                </div>
+                            </div>
+                            <div class="todo-shell__task">
+                                <span class="todo-shell__check"></span>
+                                <div>
+                                    <p>Build new feature</p>
+                                    <small>02:00 PM · Work</small>
+                                </div>
+                            </div>
+                            <div class="todo-shell__task">
+                                <span class="todo-shell__check"></span>
+                                <div>
+                                    <p>Evening walk</p>
+                                    <small>06:00 PM · Health</small>
+                                </div>
+                                <span class="todo-shell__streak">12-day streak</span>
+                            </div>
+                        </div>
+                        <div class="todo-shell__timer">
+                            <span>Focus Timer</span>
+                            <span class="todo-shell__time">25:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="todo-section todo-pillars">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Core features</span>
+                    <h2>Everything you need to stay productive</h2>
+                    <p>Built for people who want a simple, powerful task manager that respects their time and privacy.</p>
+                </div>
+                <div class="todo-pillar-grid">
+                    <article class="todo-pillar-card">
+                        <div class="todo-pillar-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        </div>
+                        <h3>Task management</h3>
+                        <p>Create tasks with due dates, priorities, and categories. Organise your day with a clear, minimal interface that keeps you focused on what matters.</p>
+                    </article>
+                    <article class="todo-pillar-card">
+                        <div class="todo-pillar-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                        </div>
+                        <h3>Habit tracking</h3>
+                        <p>Build lasting habits with precise due times, streak monitoring, and gentle nudges that keep you accountable without overwhelming you.</p>
+                    </article>
+                    <article class="todo-pillar-card">
+                        <div class="todo-pillar-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Focus timer</h3>
+                        <p>Pomodoro-style focus sessions with theme sync. Start a timer, lock in, and watch your productivity compound over time.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="todo-section todo-features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">What you get</span>
+                    <h2>Built for real productivity</h2>
+                    <p>Every feature works offline. No subscriptions, no accounts, no data harvesting.</p>
+                </div>
+                <div class="todo-features-grid">
+                    <div class="todo-feature-item">
+                        <div class="todo-feature-num">01</div>
+                        <h3>Smart notifications</h3>
+                        <p>Get nudged at exactly the right time. Notifications respect your schedule and only fire when tasks are due.</p>
+                    </div>
+                    <div class="todo-feature-item">
+                        <div class="todo-feature-num">02</div>
+                        <h3>Streak tracking</h3>
+                        <p>See your habit streaks at a glance. Visual counters motivate you to keep going and never break the chain.</p>
+                    </div>
+                    <div class="todo-feature-item">
+                        <div class="todo-feature-num">03</div>
+                        <h3>Auto-cleanup</h3>
+                        <p>Completed tasks are automatically archived so your active list stays clean and distraction-free.</p>
+                    </div>
+                    <div class="todo-feature-item">
+                        <div class="todo-feature-num">04</div>
+                        <h3>Theme sync</h3>
+                        <p>Focus timer colours sync with your chosen theme. Dark mode, light mode, or custom palettes — your call.</p>
+                    </div>
+                    <div class="todo-feature-item">
+                        <div class="todo-feature-num">05</div>
+                        <h3>Categories & labels</h3>
+                        <p>Colour-coded categories for work, health, personal, and more. Filter your view by what matters right now.</p>
+                    </div>
+                    <div class="todo-feature-item">
+                        <div class="todo-feature-num">06</div>
+                        <h3>Completely offline</h3>
+                        <p>No servers, no cloud sync, no sign-up. Your tasks and habits stay on your device and nowhere else.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="todo-section todo-privacy">
+            <div class="container">
+                <div class="todo-glow-box">
+                    <h2>Your productivity data stays yours.</h2>
+                    <p>ToDo stores everything on-device. No analytics, no telemetry, no third-party SDKs watching your habits. We believe productivity tools should help you focus, not harvest your attention.</p>
+                    <div class="todo-privacy-grid">
+                        <div class="todo-privacy-item">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <span>Encrypted on-device storage</span>
+                        </div>
+                        <div class="todo-privacy-item">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                            <span>No accounts or sign-ups</span>
+                        </div>
+                        <div class="todo-privacy-item">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><path d="M1 1l22 22" stroke-width="2"/></svg>
+                            <span>Zero tracking or analytics</span>
+                        </div>
+                        <div class="todo-privacy-item">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/><path d="M2 2l20 20" stroke-width="2"/></svg>
+                            <span>Works fully offline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="todo-cta">
+            <div class="container">
+                <p class="todo-hero__badge" style="margin-bottom:12px;">Available now on Google Play</p>
+                <h2>Ready to get more done?</h2>
+                <p>Download ToDo for free and start building better habits today.</p>
+                <div class="hero-buttons" style="justify-content:center;">
+                    <a href="https://play.google.com/store/apps/details?id=com.ets.todo" target="_blank" rel="noopener" class="btn btn-todo">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                        Download on Google Play
+                    </a>
+                    <a href="../../index.html#contact" class="btn btn-outline-todo">Talk to our team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../../Clean_icon.png" alt="Evolved Tech Stack">
+                    <span>Evolved Tech Stack</span>
+                </div>
+                <p class="footer-tagline">When you need to evolve.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/szarath-kumar" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com/szarath" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="../../privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Evolved Tech Stack. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
