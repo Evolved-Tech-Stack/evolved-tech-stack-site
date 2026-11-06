@@ -47,6 +47,63 @@
     padding: 0;
 }
 
+.terms-page {
+    max-width: 900px;
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.terms-header {
+    margin-bottom: 32px;
+}
+
+.terms-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin: 16px 0;
+}
+
+.terms-header p,
+.terms-card p {
+    color: var(--text-secondary);
+}
+
+.terms-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: clamp(20px, 4vw, 48px);
+    overflow-wrap: anywhere;
+}
+
+.terms-card h2 {
+    font-size: 1.3rem;
+    margin: 32px 0 12px;
+}
+
+.terms-card h2:first-child {
+    margin-top: 0;
+}
+
+.terms-card p + p {
+    margin-top: 16px;
+}
+
+.terms-card a,
+.terms-links a {
+    color: var(--accent-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.terms-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
+    padding-bottom: 24px;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
