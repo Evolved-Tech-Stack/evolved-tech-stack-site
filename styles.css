@@ -47,10 +47,22 @@
     padding: 0;
 }
 
-.terms-page {
+.terms-page.container {
     max-width: 900px;
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding: 48px 24px 80px;
+}
+
+.terms-nav.navbar {
+    position: static;
+}
+
+.terms-nav .nav-container {
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.terms-nav .nav-link {
+    width: auto;
 }
 
 .terms-header {
